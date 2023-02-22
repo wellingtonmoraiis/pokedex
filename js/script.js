@@ -1,3 +1,4 @@
+//descrição
 const pokeName = document.querySelector('.poke-name');
 const pokeNumber = document.querySelector('.poke-number');
 const pokeImage = document.querySelector('.pokemon-img');
