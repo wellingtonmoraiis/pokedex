@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  text-align: center;
+  background-color: #066699;
+  min-height: 100vh;
+}
+main{
+  position: relative;
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+}
+
+/*imagem pokedex*/
+.pokedex{ 
+  width: 100%;
+  max-width: 425px;
+  z-index: 1;
+}
+
+/* pokemon imagem */
+/* valores em % diminui de acordo com o tamanho da div */
+/* translete muda a posição da imagem de acordo com elas mesma */
+.pokemon-img{
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 17%;
+}
+
+/*descrição numero e nome do pokemon*/
+.description{
+  position: absolute;
+  top: 54%;
+  left: 27%;
+  font-weight: bold;
+  /* limita o tamanho da fonte */
+  font-size: clamp(6px, 4vw, 20px);
+}
+.poke-name{
+  color: #D30A40;
+  text-transform: capitalize;
+}
+.poke-number{
+  color: #4a403d;
+}
+/*formulario*/
+.form{
+  position: absolute;
+  top: 67%;
+  left: 16.5%;
+  width: 60%;
+  font-size: clamp(8px, 5vw, 1rem);
+}
+
+/*input de pesquisa*/
+.search{
+  width: 100%;
+  padding: 4%;
+  /* tira a borda ao clicar */
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #615c5c;
+  font-weight: bold;
+  box-shadow: -2px 2px 0 #e3e3e3;
+}
+
+/* div butões */
+.div-btn{
+  position: absolute;
+  bottom: 13%;
+  left: 51%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 8px;
+}
+
+/* Botões */
+.btn{
+    width: 50%;
+    padding: 3%;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #615c5c;
+    color: #e3e3e3;
+    box-shadow: 0px 3px 0 #4a403d, 1px 4px 0 #000;
+    text-transform: uppercase;
+}
+.btn:active{
+  background-color: #e3e3e3;
+  color: #615c5c;
+  box-shadow: 0px 3px 0 #e3e3e3, 1px 4px 0 #fff;
+}
